@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 html, body {
@@ -11,9 +11,9 @@ html, body {
 }
 
 .background {
-    background-image: url('D:\Работа\Удаленка\Учимся QA\shatalov.site'); /* Замените 'your-photo.jpg' на путь к вашему изображению */
+    background-image: url('https://github.com/shazyrosen/shatalov.github.io/blob/main/shatalov.site/backmain.jpg?raw=true'); /* Замените 'your-photo.jpg' на путь к вашему изображению */
     background-size: cover;
-    background-position: center;
+    background-position: left;
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,10 +25,10 @@ html, body {
     background: rgba(0, 0, 0, 0.6); /* Затемнение фона текста */
     color: #fff;
     padding: 20px;
-    max-width: 400px;
+    max-width: 515px;
     border-radius: 10px;
-    margin-right: 5%;
-    text-align: right;
+    margin-right: 100px;
+    text-align: left;
 }
 
 h1 {
@@ -54,4 +54,38 @@ p {
     p {
         font-size: 1rem;
     }
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    padding: 20px;
+}
+
+.intro {
+    margin-bottom: 20px; /* Отступ между текстом и контактами */
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Расстояние между иконками и текстом */
+    margin-top: 10px;
+}
+
+.icon {
+    width: 30px; /* Размер иконок */
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Увеличение при наведении */
+    cursor: pointer;
+}
+
+.phone {
+    font-size: 1rem;
+    color: #ffffff; /* Цвет текста */
+	text-decoration: none
 }
